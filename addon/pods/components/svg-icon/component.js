@@ -33,7 +33,7 @@ export default Component.extend({
   computedClassName: computed('classPrefix', 'icon', function() {
     return `${this.get('classPrefix')}-${this.get('icon')}`
   }),
-  partialPath: computed('computedClassName', function() {
-    return `partials/-${this.get('computedClassName')}`
+  partialPath: computed('icon', function() {
+    return `partials/-${this.get('icon')}`
   })
 })
