@@ -34,6 +34,6 @@ export default Component.extend({
     return `${this.get('classPrefix')}-${this.get('icon')}`
   }),
   partialPath: computed('computedClassName', function() {
-    return `partials/-${this.get('computedClassName')}`
+    return `partials/-${this.get('icon')}`
   })
 })
